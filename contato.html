@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato | RN Vision</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="container navbar">
+    <a href="index.html" class="logo">
+      <div>
+        <div class="logo">
+  <img src="imagens/logo.png" alt="RN Tecnologia">
+</div>
+      </div>
+    </a>
+
+    <button class="mobile-btn" onclick="toggleMenu()">☰</button>
+
+    <nav class="menu" id="menu">
+      <a href="index.html" class="">Início</a>
+<a href="sobre.html" class="">Sobre</a>
+<a href="servicos.html" class="">Serviços</a>
+<a href="contato.html" class="active">Contato</a>
+      <a class="btn" href="contato.html">Solicitar orçamento</a>
+    </nav>
+  </div>
+</header>
+
+
+<main class="page-space">
+  <section>
+    <div class="container">
+      <div class="section-title">
+        <h2>Contato e <span class="gradient-text">Orçamento</span></h2>
+        <p>Preencha o formulário abaixo. Ao clicar em enviar, sua mensagem será enviada diretamente para o WhatsApp da RN Vision.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3>Informações</h3>
+          <div class="info-item">📞 <strong>Telefone/WhatsApp:</strong><br>(19) 99991-3539</div>
+           <div class="info-item">📩 <strong>E-mail:</strong><br>rnvisionpira@gmail.com</div>
+          <div class="info-item">⏰ <strong>Segunda à sexta:</strong><br>07:00 às 17:00</div>
+          <div class="info-item">⏰ <strong>Sábado:</strong><br>07:00 às 12:00</div>
+          <div class="info-item">🔒 <strong>Domingo e feriado:</strong><br>Fechado</div>
+        </div>
+
+        <div class="form-card">
+          <h3>Solicitar orçamento</h3>
+          <form id="whatsappForm">
+            <div class="input-row">
+              <input type="text" id="nome" placeholder="Nome" required>
+              <input type="text" id="sobrenome" placeholder="Sobrenome" required>
+            </div>
+            <input type="tel" id="celular" placeholder="Celular" required>
+            <input type="text" id="assunto" placeholder="Assunto" required>
+            <textarea id="mensagem" placeholder="Mensagem" required></textarea>
+            <button type="submit" class="btn">Enviar para WhatsApp</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+
+<footer>
+  <div class="container">
+    <p>© <span id="year"></span> RN Vision. Todos os direitos reservados.</p>
+  </div>
+</footer>
+<script src="script.js"></script>
+
+</body>
+</html>
